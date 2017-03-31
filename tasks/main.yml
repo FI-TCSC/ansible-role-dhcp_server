@@ -18,6 +18,7 @@
 
 - name: create a dummy nodes.conf file
   file: state=touch path=/etc/dhcp/dhcpd.d/nodes.conf owner=root mode=0644
+  changed_when: false
 
 # Generate configuration
 - name: Generate dhcpd.conf
